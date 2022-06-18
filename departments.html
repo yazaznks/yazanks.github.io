@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html id="html" lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Nada center for the disabled</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="description" content="" />
+	<meta name="author" content="http://webthemez.com" />
+
+	<link href="css/bootstrap.min.css" rel="stylesheet" />
+	<link href="css/fancybox/jquery.fancybox.css" rel="stylesheet">
+	<link href="css/jcarousel.css" rel="stylesheet" />
+	<link href="css/flexslider.css" rel="stylesheet" />
+	<link href="css/style.css" rel="stylesheet" />
+
+	<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+	<!--[if lt IE 9]>
+		  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+
+</head>
+<body>
+	<div id="wrapper">
+
+		<!-- start header -->
+		<header>
+			<div class="navbar navbar-default navbar-static-top">
+				<div class="container">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<a class="navbar-brand" href="index.html"><img src="img/logo.png" alt="logo" /></a>
+					</div>
+					<div class="navbar-collapse collapse">
+						<ul class="nav navbar-nav english">
+							<li><a href="index.html">Home</a></li>
+							<li><a href="about.html">About Us</a></li>
+
+							<!-- Drop down Departments-->
+							<li>
+								<a href="departments.html" onclick="Department()">Services ▾</a>
+								<ul class="dropdown">
+									<li><a href="services.html" id="early">Early intervention</a></li>
+									<li><a href="services.html" id="special">Special education</a></li>
+									<li><a href="services.html" id="sense">Sensory integration</a></li>
+									<li><a href="services.html" id="speech">Speech therapy</a></li>
+									<li><a href="services.html" id="Occupation">Occupation therapy</a></li>
+									<li><a href="services.html" id="learn1">Learning disability level 1</a></li>
+									<li><a href="services.html" id="learn2">Learning disability level 2</a></li>
+									<li><a href="services.html" id="psychology">Psycology</a></li>
+									<li><a href="services.html" id="physio">Physiotherapy</a></li>
+									<li><a href="services.html" id="music">Music education</a></li>
+									<li><a href="services.html" id="adapted">Adapted physical education</a></li>
+									<li><a href="services.html" id="art">Art</a></li>
+									<li><a href="services.html" id="rehab">Rehabilitation program</a></li>
+
+								</ul>
+
+
+							</li>
+							<!--end here  -->
+
+							<li><a href="contact.html">Contact</a></li>
+							<li><button onclick="EditData()">عربي</button></li>
+						</ul>
+						<ul class="nav navbar-nav arabic">
+							<li><a href="contact.html">إتصل بنا</a></li>
+
+							<li>
+								<a href="departments.html" onclick="Department()">خدماتنا ▾</a>
+								<ul class="dropdown">
+									<li><a style="font-size:20px;" href="services.html" id="early">التدخل المبكر</a></li>
+									<li><a style="font-size:20px;" href="services.html" id="autism">التربية الخاصة</a></li>
+									<li><a style="font-size:20px;" href="services.html" id="voc">التكامل الحسي</a></li>
+									<li><a style="font-size:20px;" href="services.html" id="speech">علاج النطق</a></li>
+									<li><a style="font-size:20px;" href="services.html" id="Occupation">العلاج الوظيفي</a></li>
+									<li><a style="font-size:20px;" href="services.html" id="learn1">صعوبات التعلم مستوى 1</a></li>
+									<li><a style="font-size:20px;" href="services.html" id="learn2">صعوبات التعلم مستوى 2</a></li>
+									<li><a style="font-size:20px;" href="services.html" id="psychology">العلاج النفسي</a></li>
+									<li><a style="font-size:20px;" href="services.html" id="physio">العلاج الطبيعي</a></li>
+									<li><a style="font-size:20px;" href="services.html" id="music">التربية الموسيقية</a></li>
+									<li><a style="font-size:20px;" href="services.html" id="adapted">الرياضة المعدلة</a></li>
+									<li><a style="font-size:20px;" href="services" id="art">الفنون</a></li>
+									<li><a style="font-size:20px;" href="services.html" id="rehab">التأهيل العلاجي</a></li>
+								</ul>
+							</li>
+							<li><a href="about.html">من نحن</a></li>
+							<li><a href="index.html">الرئيسية</a></li>
+							<li><button style="font-size:15px;" onclick="EditData()">English</button></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</header><!-- end header -->
+		<section id="inner-headline">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<h2 class="pageTitle english">Departments</h2>
+						<h2 class="pageTitle arabic">خدماتنا</h2>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="content">
+		<div class= "arabic">
+			<div class="container">
+				<p style="text-align:center;"> نحن نوفر العديد من انواع التعليم لكافة انواع الاعاقات لدمج ذوي الاعاقة مع اقارنهم في المدارس النظامية في المجتمع، اضغط على القسم لمعرفة التفاصيل  </p> </br>
+				<div class="row service-v1 margin-bottom-40">
+				
+					<div class="col-md-4 md-margin-bottom-40">
+						<h3>علاج حسي</h3>
+						<img class="img1" src="img/senses.jpg" alt=""><br><br>
+						<p> العلاج الحسي هو القدرة على تجميع وتنظيم ومعالجة المعلومات الحسية الواردة من أجسادنا وبيئتنا.</p>
+					</div>
+					<div class="col-md-4">
+						<h3>التوحد</h3>
+						<img class="img1" src="img/التوحد.jpg" alt=""><br><br>
+						<p>هو عبارة عن اضطرابات التطور والذي يؤثر على قدرة الطفل على الاتصال مع المحيطين به وتطوير علاقات متبادلة معهم.</p>
+					</div>
+					<div class="col-md-4 md-margin-bottom-40">
+						<h3>التدخل المبكر</h3>
+						<img class="img1" src="img/مبكر.png" alt=""><br><br>
+						<p>التدخل المبكر هو معرفة الامراض الطبية والاجتماعية والتربوية والنفسية مبكراً لتجنب تأخر نمائي أو الذين لديهم قابلية للتأخر أو الإعاقة</p>
+					</div>
+				</div>
+				<div class="row service-v1 margin-bottom-40">
+					<div class="col-md-4 md-margin-bottom-40">
+						<h3>التأهيل العلاجي</h3>
+						<img class="img-responsive" src="img/علاجي.jpg" alt=""><br><br>
+						<p>هو تحسين حياة الاطفال الذين يعانون من اعاقات جسديةمثل التلف العقلي او الشلل ومساعدتهمبعناية تامة</p>
+					</div>
+					<div class="col-md-4">
+						<h3>علاج النطق</h3>
+						<img class="img-responsive" src="img/future.jpg" alt=""><br><br>
+						<p>هو اعادة تأهيل الطلاب الذين يعانون من صعوبات واضطرابات في التواصل اللغوي واللفظ واضطرابات البلع</p>
+					</div>
+					<div class="col-md-4 md-margin-bottom-40">
+						<h3>العلاج الوظيفي</h3>
+						<img class="img-responsive" src="img/Occupation2.jpg" alt=""><br><br>
+						<p> هو تقييم حالات الطلاب وتأهيلهم لمهارات الحياة اليومية والعملية, وذلك من خلال تطوير قدراتهم وازالة الحواجز البيئية مما يساعد على استقلاليتهم.</p>
+					</div>
+				</div>
+				<div class="row service-v1 margin-bottom-40">
+					<div class="col-md-4 md-margin-bottom-40">
+						<h3>صعوبات التعلم صنف 1</h3>
+						<img class="img-responsive" src="img/صعوبات1.jpeg" alt=""><br><br>
+						<p>هذا القسم مخصص للطلاب ذوي الاعاقات الخاصة</p>
+					</div>
+					<div class="col-md-4">
+						<h3>صعوبات التعلم صنف 2</h3>
+						<img class="img-responsive" src="img/صعوبات2.jpeg" alt=""><br><br>
+						<p>هذا القسم مخصص للطلاب المصابين باعاقات شديدة</p>
+					</div>
+					<div class="col-md-4">
+						<h3>الفنون</h3>
+						<img class="img-responsive" src="img/art2.jpg" alt=""><br><br>
+						<p>لدى جميع الاطفال قدرات مختلفة, دور الفنون هو اظهار هذه المهارات ودفع الطلاب الى الابداع  التي  تساعدهم عن التعبير عن نفسهم.</p>
+					</div>
+					
+				</div>
+				<div class="row service-v1 margin-bottom-40">
+					<div class="col-md-4">
+						<h3>العلاج الطبيعي</h3>
+						<img class="img-responsive" src="img/الطبيعي.jpg" alt=""><br><br>
+						<p>هو عبارة عن طريقة علاجية في اي قصور في الاداء الحركي او تطوير المهاراتالحركية بشكل عام وزيادة المرونة وقوة التحمل .</p>
+					</div>
+					<div class="col-md-4 md-margin-bottom-40">
+						<h3>التربية الموسيقسة</h3>
+						<img class="img-responsive" src="img/music.jpeg" alt=""><br><br>
+						<p>  هو نوع من العلاجات المشجعة للتعبير عن النفس, لتحسين الحالة العامة للطفل. وتساعد التربيةالموسيقية على تحسين الصحة النفسية والعقلية للطفل.</p>
+					</div>
+					<div class="col-md-4 md-margin-bottom-40">
+						<h3>العلاج النفسي</h3>
+						<img class="img-responsive" src="img/psychologyP.jpeg" alt=""><br><br>
+						<p>يقيم  الاخصائي النفسي القدرات المعرفية لإبنك ، يحدد مستوى انتباهه و تركيزه و يعمل مع المدرسين وأولياء الأمور لضمان تجربة تعليمية ناجحة لإبنك.</p>
+					</div>
+
+
+				</div>
+				<div class="row service-v1 margin-bottom-40">
+					<div class="col-md-4 md-margin-bottom-40">
+						<h3>الرياضة المعدلة</h3>
+						<img class="img-responsive" src="img/معدلة.png" alt=""><br><br>
+						<p>هي عبارةعن نشاطات متنوعة يشارك بها الاطفال لإثبات الذات واكتساب معلومات عن الالعاب الرياضية التي يمارسها. </p>
+					</div>
+					
+				</div>
+			</div>
+			</div>
+
+
+			<!--      English starts here        -->
+			
+			<div class= "english">
+			<div class="container">
+				<p style="text-align:center;"> We provide many types of education for all types of disabilities to help our kids with be more independent and integrate them with their peers in regular schools in the community, click on the section to see the details  </p> </br>
+				<div class="row service-v1 margin-bottom-40">
+					<div class="col-md-4 md-margin-bottom-40">
+						<h3>Sensory integration</h3>
+						<img class="img1" src="img/senses.jpg" alt=""><br><br>
+						<p> Sensory therapy is the ability to collect, organize, and process sensory information from our bodies and environment.</p>
+					</div>
+
+					<div class="col-md-4">
+						<h3>Autism</h3>
+						<img class="img1" src="img/التوحد.jpg" alt=""><br><br>
+						<p>It is a developmental disorder that affects the child's ability to communicate with those around them and develop reciprocal relationships with them.</p>
+					</div>
+					<div class="col-md-4 md-margin-bottom-40">
+						<h3>Early intervention</h3>
+						<img class="img1" src="img/مبكر.png" alt=""><br><br>
+						<p>Early intervention is the early Detection of medical, social, educational and psychological diseases to avoid any developmental delay.</p>
+					</div>
+				</div>
+				<div class="row service-v1 margin-bottom-40">
+					<div class="col-md-4 md-margin-bottom-40">
+						<h3>Rehabilitation program</h3>
+						<img class="img-responsive" src="img/علاجي.jpg" alt=""><br><br>
+						<p>It is to improve the overall lives of children with disabilities such as mental damage or paralysis by helping them with full care.
+</p>
+					</div>
+					<div class="col-md-4">
+						<h3>Speech therapy</h3>
+						<img class="img-responsive" src="img/future.jpg" alt=""><br><br>
+						<p>It is the rehabilitation of students who suffer from difficulties/disorders in communication, pronunciation and/or swallowing disorders</p>
+					</div>
+					<div class="col-md-4 md-margin-bottom-40">
+						<h3>Occupational therapy</h3>
+						<img class="img-responsive" src="img/Occupation2.jpg" alt=""><br><br>
+						<p> It is to assess students' cases and rehabilitate them for daily and practical life skills, by developing their abilities and removing environmental barriers, which helps them become more independent.</p>
+					</div>
+				</div>
+				<div class="row service-v1 margin-bottom-40">
+					<div class="col-md-4">
+						<h3>Learning disability 1</h3>
+						<img class="img-responsive" src="img/صعوبات1.jpeg" alt=""><br><br>
+						<p>This is a department for students who suffer from mild disabilities</p>
+					</div>
+					<div class="col-md-4 margin-bottom-40">
+						<h3>Learning Disability 2</h3>
+						<img class="img-responsive" src="img/صعوبات2.jpeg" alt=""><br><br>
+						<p>This is a Department for students who suffer from severe disabilites</p>
+					</div>
+					<div class="col-md-4 margin-bottom-40">
+						<h3>Art</h3>
+						<img class="img-responsive" src="img/art2.jpg" alt=""><br><br>
+						<p>All children have different abilities, the role of the arts is to show these skills and push students to be creative and express themselves through the art.</p>
+					</div>
+				</div>
+				<div class="row service-v1 margin-bottom-40">
+					<div class="col-md-4 md-margin-bottom-40">
+						<h3>Psychology</h3>
+						<img class="img-responsive" src="img/psychologyP.jpeg" alt=""><br><br>
+						<p>The psychologist assesses your child's cognitive abilities, determines his level of attention and focus, and works with teachers and parents to ensure a successful educational experience for your child.</p>
+					</div>
+					<div class="col-md-4">
+						<h3>Physical therapy</h3>
+						<img class="img-responsive" src="img/الطبيعي.jpg" alt=""><br><br>
+						<p>It is a treatment method for any deficiencies in motor performance or the development of motor skills in general and to increase flexibility and endurance.</p>
+					</div>
+					<div class="col-md-4 md-margin-bottom-40">
+						<h3>Musical education</h3>
+						<img class="img-responsive" src="img/music.jpeg" alt=""><br><br>
+						<p>It is a kind of therapy that encourages self-expression, to improve the general condition of the child. Musical education also helps improve the psychological and mental health of the child.</p>
+					</div>
+				</div>
+				<div class="row service-v1 margin-bottom-40">
+					<div class="col-md-4 md-margin-bottom-40">
+						<h3>Adapted physical education</h3>
+						<img class="img-responsive" src="img/معدلة.png" alt=""><br><br>
+						<p>It is a variety of activities that children participate in to prove themselves and gain information about the sports they practice.</p>
+					</div>
+					
+					
+				</div>
+			</div>
+			</div>
+
+
+		</section>
+				<footer>
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-3">
+						<div class="widget english ">
+							<h1 class="widgetheading">contact us</h1>
+							<address>
+								Nada center for children with disability
+							</address>
+							<p>
+								<div>
+								<img src="img/whatsapp2.png"/> 66677836 <br>
+								<img src="img/telephone.png"/> 70260660 <br>
+								<img src="img/mobile2.jpg"/> 77266100 <br>
+								<img src="img/email.png"/> nedaacenter@yahoo.com
+							</div>
+							</p>
+						</div>
+						<div class="widget arabic">
+							<h1 class="widgetheading">اخر الاخبار</h1>
+							<ul class="link-list">
+								<li><a href="#"></a></li>
+								<li><a href="#"></a></li>
+								<li><a href="#"></a></li>
+							</ul>
+						</div>
+
+
+					</div>
+					<div class="col-lg-3">
+						<div class="widget english">
+							<h1 class="widgetheading">Quick Links</h1>
+							<ul class="link-list">
+								<li><a href="#">Latest Events</a></li>
+								<li><a href="#">Terms and conditions</a></li>
+								<li><a href="#">Privacy policy</a></li>
+								<li><a href="#">Career</a></li>
+								<li><a href="#">Contact us</a></li>
+							</ul>
+						</div>
+						<div class="widget arabic">
+							<h1 class="widgetheading">المواقع السريعة</h1>
+							<ul class="link-list">
+								<li><a href="index.html">الرئيسية</a></li>
+								<li><a href="about.html">من نحن؟</a></li>
+								<li><a href="departments.html">اقسام التعليم</a></li>
+								<li><a href="contact.html">تواصل معنا</a></li>
+
+							</ul>
+						</div>
+
+					</div>
+					<div class="col-lg-3">
+						<div class="widget english">
+							<h1 class="widgetheading">Quick links</h1>
+							<ul class="link-list">
+								<li><a href="index.html">Home</a></li>
+								<li><a href="about.html">About us</a></li>
+								<li><a href="departments.html">Departments</a></li>
+								<li><a href="contact.html">Contact us</a></li>
+							</ul>
+						</div>
+						<div class="widget arabic">
+							<h1 class="widgetheading">المساعدة والدعم</h1>
+							<ul class="link-list">
+								<li><a href="contact.html"></a>خريطة الموقع</li>
+								<li><a href="#"></a>سياسات الخصوصية</li>
+								<li><a href="#"></a>الشروط والاحكام</li>
+								<li><a href="contact.html">اتصل بنا</a></li>
+							</ul>
+						</div>
+
+					</div>
+					<div class="col-lg-3">
+						<div class="widget english ">
+							<h1 class="widgetheading">latest news:</h1>
+						</div>
+						<div class="widget arabic">
+							<h1 class="widgetheading">تواصل بنا</h1>
+							<address>
+								مركز النداء لذوي الاحتياجات الخاصة<br>
+							</address>
+							<div>
+								<img src="img/whatsapp2.png"/> 66677836 <br>
+								<img src="img/telephone.png"/> 70260660 <br>
+								<img src="img/mobile2.jpg"/> 77266100 <br>
+								<img src="img/email.png"/> nedaacenter@yahoo.com
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="sub-footer">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-6">
+							<div class="copyright">
+								<h1>
+									<span class="english" style="font-size: 15px">©  2022 maha, All right reserved  </span>
+									<span class="arabic" style="font-size: 15px">©  2022 مركز النداء كل الحقوق محفوظة  </span>
+								</h1>
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<ul class="social-network">
+								<li><a href="https://www.facebook.com/nedaacenter.qatar/" title="Facebook"><i class="fa fa-facebook"></i><img src="img/fb.png" /></a></li>
+								<li><a href="https://www.instagram.com/nedaa.center/" title="Instagram"><i class="fa fa-facebook"></i><img src="img/instagram.jpg" /></a></li>
+								<li><a href="https://twitter.com/n_kidsworld" title="twitter"><i class="fa fa-facebook"></i><img src="img/twitter.png" /></a></li>
+								
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<a href="#" class="scrollup"><i class="fa fa-angle-up active"></i></a>
+	<!-- javascript
+		================================================== -->
+	<!-- Placed at the end of the document so the pages load faster -->
+	<script src="js/jquery.js"></script>
+	<script src="js/jquery.easing.1.3.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.fancybox.pack.js"></script>
+	<script src="js/jquery.fancybox-media.js"></script>
+	<script src="js/portfolio/jquery.quicksand.js"></script>
+	<script src="js/portfolio/setting.js"></script>
+	<script src="js/jquery.flexslider.js"></script>
+	<script src="js/animate.js"></script>
+	<script src="js/custom.js"></script>
+</body>
+</html>
+
+
+<script>
+
+	window.onload = function () {
+		var eng = localStorage.getItem('eng');
+		console.log(eng);
+		var ele = document.getElementsByClassName('english');
+		var ele2 = document.getElementsByClassName('arabic');
+		if (eng === 'true') {
+			for (var i = 0; i < ele.length; i++) {
+				document.getElementById("html").dir = "ltr";
+				ele[i].style.display = 'inline';
+				ele2[i].style.display = 'none';
+			}
+		}
+		else if (eng === 'false') {
+			for (var i = 0; i < ele2.length; i++) {
+				document.getElementById("html").dir = "rtl";
+				ele[i].style.display = 'none';
+				ele2[i].style.display = 'inline';
+
+
+			}
+		}
+	}
+	function EditData() {
+		var eng = localStorage.getItem('eng');
+		var ele = document.getElementsByClassName('english');
+		var ele2 = document.getElementsByClassName('arabic');
+		if (eng === 'true') {
+			document.getElementById("html").dir = "rtl";
+			for (var i = 0; i < ele.length; i++) {
+				ele[i].style.display = 'none';
+				ele2[i].style.display = 'inline';
+			}
+			eng = false;
+			localStorage.setItem('eng', 'false');
+		}
+		else {
+			document.getElementById("html").dir = "ltr";
+			for (var i = 0; i < ele.length; i++) {
+				ele[i].style.display = 'inline';
+				ele2[i].style.display = 'none';
+			}
+			eng = true;
+			localStorage.setItem('eng', 'true');
+		}
+	}
+
+
+	document.getElementById("art").addEventListener("click", function (event) { localStorage.setItem('Dep', 'art'); });
+	document.getElementById("early").addEventListener("click", function (event) { localStorage.setItem('Dep', 'early'); });
+	document.getElementById("autism").addEventListener("click", function (event) { localStorage.setItem('Dep', 'special'); });
+	document.getElementById("voc").addEventListener("click", function (event) { localStorage.setItem('Dep', 'sense'); });
+	document.getElementById("speech").addEventListener("click", function (event) { localStorage.setItem('Dep', 'speech'); });
+	document.getElementById("Occupation").addEventListener("click", function (event) { localStorage.setItem('Dep', 'Occupation'); });
+	document.getElementById("multi").addEventListener("click", function (event) { localStorage.setItem('Dep', 'rehab'); });
+	document.getElementById("learn1").addEventListener("click", function (event) { localStorage.setItem('Dep', 'learn1'); });
+	document.getElementById("learn2").addEventListener("click", function (event) { localStorage.setItem('Dep', 'learn2'); });
+	document.getElementById("psychology").addEventListener("click", function (event) { localStorage.setItem('Dep', 'psychology'); });
+	document.getElementById("physio").addEventListener("click", function (event) { localStorage.setItem('Dep', 'physio'); });
+	document.getElementById("adapted").addEventListener("click", function (event) { localStorage.setItem('Dep', 'adapted'); });
+	document.getElementById("music").addEventListener("click", function (event) { localStorage.setItem('Dep', 'musical'); });
+
+</script>
