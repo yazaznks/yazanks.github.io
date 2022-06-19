@@ -363,7 +363,10 @@
 <script>
 
 	window.onload = function () {
-		
+		if (typeof eng !== 'undefined' && eng !== null) {
+
+		}
+		else {var eng = localStorage.setItem('eng', 'true')}
 		var eng = localStorage.getItem('eng');
 		console.log(eng);
 		var ele = document.getElementsByClassName('english');
