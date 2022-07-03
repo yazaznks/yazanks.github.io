@@ -13,6 +13,8 @@
 	<link href="css/flexslider.css" rel="stylesheet" />
 	<link href="js/owl-carousel/owl.carousel.css" rel="stylesheet">
 	<link href="css/style.css" rel="stylesheet" />
+	<link href="css/font-awesome.css" rel="stylesheet" />
+
 
 	<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
 	<!--[if lt IE 9]>
@@ -23,115 +25,106 @@
 <body>
 	<div id="wrapper">
 		<!-- start header -->
-		<header>
-			<div class="navbar navbar-default navbar-static-top">
-				<div class="container">
-					<div class="navbar-header">
-						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-						</button>
-						<a class="navbar-brand" href="index.html"><img src="img/logo.png" alt="logo" /></a>
-					</div>
-					<div class="navbar-collapse collapse">
-						<ul class="nav navbar-nav english">
-							<li><a href="index.html">Home</a></li>
-							<li><a href="about.html">About Us</a></li>
+		<nav class="navbar-fixed-top">
+			<input type="checkbox" id="check">
+			<label for="check" class="checkbtn"><i class="fa fa-bars"></i></label>
+			<label class="navbar-brand" href="index.html"><img src="img/logo.png" alt="logo" /></label>
+			<ul class="english">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="about.html">About Us</a></li>
 
-							<!-- Drop down Departments-->
-							<li>
-								<a href="departments.html" onclick="Department()">Services ▾</a>
-								<ul class="dropdown">
-									<li><a href="services.html" id="early">Early intervention</a></li>
-									<li><a href="services.html" id="special">Special education</a></li>
-									<li><a href="services.html" id="sense">Sensory integration</a></li>
-									<li><a href="services.html" id="speech">Speech therapy</a></li>
-									<li><a href="services.html" id="Occupation">Occupation therapy</a></li>
-									<li><a href="services.html" id="learn1">Learning disability level 1</a></li>
-									<li><a href="services.html" id="learn2">Learning disability level 2</a></li>
-									<li><a href="services.html" id="psychology">Psychotherapy</a></li>
-									<li><a href="services.html" id="physio">Physiotherapy</a></li>
-									<li><a href="services.html" id="music">Music education</a></li>
-									<li><a href="services.html" id="adapted">Adapted physical education</a></li>
-									<li><a href="services.html" id="art">Art</a></li>
-									<li><a href="services.html" id="rehab">Rehabilitation program</a></li>
+				<!-- Drop down Departments-->
+				<li>
+					<a href="departments.html" onclick="Department()">Services ▾</a>
+					<ul class="dropdown">
+						<li><a href="services.html" id="early"><u>Early intervention</u></a></li>
+						<li><a href="services.html" id="special"><u>Special education</u></a></li>
+						<li><a href="services.html" id="sense"><u>Sensory integration</u></a></li>
+						<li><a href="services.html" id="speech"><u>Speech therapy</u></a></li>
+						<li><a href="services.html" id="Occupation"><u>Occupation therapy</u></a></li>
+						<li><a href="services.html" id="learn1"><u>Learning disability level 1</u></a></li>
+						<li><a href="services.html" id="learn2"><u>Learning disability level 2</u></a></li>
+						<li><a href="services.html" id="psychology"><u>Psychotherapy</u></a></li>
+						<li><a href="services.html" id="physio"><u>Physiotherapy</u></a></li>
+						<li><a href="services.html" id="music"><u>Music education</u></a></li>
+						<li><a href="services.html" id="adapted"><u>Adapted physical education</u></a></li>
+						<li><a href="services.html" id="art"><u>Art</u></a></li>
+						<li><a href="services.html" id="rehab"><u>Rehabilitation program</u></a></li>
 
-								</ul>
+					</ul>
+				</li>
+				<!--end here  -->
+				<li><a href="contact.html">Contact</a></li>
+				<li><button style="background-color: transparent; border: 0px; font-size: 20px; " onclick="EditData()">عربي</button></li>
 
+			</ul>
 
-							</li>
-							<!--end here  -->
-							<li><a href="contact.html">Contact</a></li>
-							<li><button onclick="EditData()">عربي</button></li>
-						</ul>
-						<ul class="nav navbar-nav arabic">
-							<li><a href="contact.html">إتصل بنا</a></li>
+			<ul class="arabic">
 
-							<li>
-								<a href="departments.html" onclick="Department()">خدماتنا ▾</a>
-								<ul class="dropdown">
-									<li><a style="font-size:20px;" href="services.html" id="early">التدخل المبكر</a></li>
-									<li><a style="font-size:20px;" href="services.html" id="autism">التربية الخاصة</a></li>
-									<li><a style="font-size:20px;" href="services.html" id="voc">التكامل الحسي</a></li>
-									<li><a style="font-size:20px;" href="services.html" id="speech">علاج النطق</a></li>
-									<li><a style="font-size:20px;" href="services.html" id="Occupation">العلاج الوظيفي</a></li>
-									<li><a style="font-size:20px;" href="services.html" id="learn1">صعوبات التعلم مستوى 1</a></li>
-									<li><a style="font-size:20px;" href="services.html" id="learn2">صعوبات التعلم مستوى 2</a></li>
-									<li><a style="font-size:20px;" href="services.html" id="psychology">العلاج النفسي</a></li>
-									<li><a style="font-size:20px;" href="services.html" id="physio">العلاج الطبيعي</a></li>
-									<li><a style="font-size:20px;" href="services.html" id="music">التربية الموسيقية</a></li>
-									<li><a style="font-size:20px;" href="services.html" id="adapted">الرياضة المعدلة</a></li>
-									<li><a style="font-size:20px;" href="services" id="art">الفنون</a></li>
-									<li><a style="font-size:20px;" href="services.html" id="rehab">التأهيل العلاجي</a></li>
-								</ul>
-							</li>
-							<li><a href="about.html">من نحن</a></li>
-							<li><a href="index.html">الرئيسية</a></li>
-							<li><button style="font-size:15px;" onclick="EditData()">English</button></li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</header>
+				<li><button style="background-color: transparent; border: 0px; font-size: 20px;" onclick="EditData()">English</button></li>
+				<li><a href="index.html">الرئيسية</a></li>
+				<li><a href="about.html">من نحن</a></li>
+
+				<li>
+					<a href="departments.html" onclick="Department()">خدماتنا ▾</a>
+					<ul class="dropdown"style="right:200px;">
+						<li id="early"><a style="font-size:20px;" href="services.html" ><u>التدخل المبكر</u></a></li>
+						<li><a style="font-size:20px;" href="services.html" id="autism"><u>التربية الخاصة</u></a></li>
+						<li><a style="font-size:20px;" href="services.html" id="voc"><u>التكامل الحسي</u></a></li>
+						<li><a style="font-size:20px;" href="services.html" id="speech"><u>علاج النطق</u></a></li>
+						<li><a style="font-size:20px;" href="services.html" id="Occupation"><u>العلاج الوظيفي</u></a></li>
+						<li><a style="font-size:20px;" href="services.html" id="learn1"><u>صعوبات التعلم مستوى 1</u></a></li>
+						<li><a style="font-size:20px;" href="services.html" id="learn2"><u>صعوبات التعلم مستوى 2</u></a></li>
+						<li><a style="font-size:20px;" href="services.html" id="psychology"><u>العلاج النفسي</u></a></li>
+						<li><a style="font-size:20px;" href="services.html" id="physio"><u>العلاج الطبيعي</u></a></li>
+						<li><a style="font-size:20px;" href="services.html" id="music"><u>التربية الموسيقية</u></a></li>
+						<li><a style="font-size:20px;" href="services.html" id="adapted"><u>الرياضة المعدلة</u></a></li>
+						<li><a style="font-size:20px;" href="services" id="art"><u>الفنون</u></a></li>
+						<li><a style="font-size:20px;" href="services.html" id="rehab"><u>التأهيل العلاجي</u></a></li>
+					</ul>
+				</li>
+				<li><a class="active" href="contact.html">إتصل بنا</a></li>
+
+			</ul>
+		</nav>
+		
 		<!-- end header -->
-		<section >
-			
-			<div id="headercontainer">
+		<section style="margin-top:80px;" >
+			<div id="headercontainer" >
 				<img style="width:100%;" src="img/1.jpg" alt="">
 				<h1 class="head1 headertxt arabic">اتصل</h1>
 				<h1 class="head2 headertxt arabic">قيم</h1>
 				<h1 class="head3 headertxt arabic">عالج</h1>
 				<h1 class="head1 headertxt english">Call</h1>
-				<h1 class="head2 headertxt english"style="font-size:90px; font-size:10vw;">Assess</h1>
+				<h1 class="head2 headertxt english">Assess</h1>
 				<h1 class="head3 headertxt english">Treat</h1>
 			</div>
 			<!-- end slider -->
 
 		</section>
-		<section class="callaction">
+		<section class="callaction" >
 			<div class="container">
-				<div class="row">
+				<div class="row" >
 					<div class="col-lg-12">
 						<div class="aligncenter">
 							<h1 class="aligncenter english">About us</h1>
 							<h1 class="aligncenter arabic">من نحن؟</h1>
 							<br><br /><br />
 
-							<p class="arabic"style="font-size:30px;  font-size:10vw;">
+							<p class="arabic"style="font-size:30px;">
 								.مهمتنا في مركز نداء تعليم و تهيئة  ذوي الاعاقة للدمج مع اقرانهم في المدارس النظامية و دمجهم في المجتمع<br>
 								نعمل على الكشف المبكر للإعاقات والاضطرابات بجميع انواعها ونقدم شتى الخدمات التربوية والنفسية ثم نقوم بتطبيق<br>
 								.احدث برامج التدخل المبكر بما يتناسب مع قدرات كل طفل<br>
 								نهتم برفع مستوى قدرات طلابنا التعليمية والتحصيلية
 							</p>
-							<p class="english"style="font-size:30px;  font-size:10vw;">
+							<p class="english"style="font-size:30px;">
 								Our mission at Nada Center is to educate and prepare people with disabilities for inclusion with their peers in regular schools and to integrate them in the society <br />
 								We work to intervene early in discovering mental, developmental, learning and physical disabilities. The special educator assesses the children’s skills ,determines their learning needs , designs an individual education plan(IEP)  train children and track each student’ s progress.
 							</p>
 								<br /><br />
 								<a href="about.html">
-									<button class="english" style="padding: 10px 70px; border-radius: 8px;font-size: 30px;  font-size:10vw;">Learn More</button>
-									<button class="arabic" style="padding: 10px 70px; border-radius: 8px;font-size: 30px;  font-size:10vw;">اقرأ المزيد</button>
+									<button class="english" style="padding: 10px 70px; border-radius: 8px;font-size: 30px;">Learn More</button>
+									<button class="arabic" style="padding: 10px 70px; border-radius: 8px;font-size: 30px;">اقرأ المزيد</button>
 								</a>
 						</div>
 					</div>
@@ -209,8 +202,8 @@
 				</div>
 				<div style="text-align:center">
 					<a href="departments.html">
-						<button class="english" style="padding: 20px 100px; border-radius: 8px;font-size: 30px;  font-size:10vw;">Learn More</button>
-						<button class="arabic" style="padding: 20px 100px; border-radius: 8px;font-size: 30px;  font-size:10vw;">اقرأ المزيد</button>
+						<button class="english" style="padding: 20px 100px; border-radius: 8px;font-size: 30px;">Learn More</button>
+						<button class="arabic" style="padding: 20px 100px; border-radius: 8px;font-size: 30px;">اقرأ المزيد</button>
 					</a>
 				</div>
 
@@ -331,9 +324,9 @@
 						</div>
 						<div class="col-lg-6">
 							<ul class="social-network">
-								<li><a href="https://www.facebook.com/nedaacenter.qatar/" title="Facebook"><i class="fa fa-facebook"></i><img src="img/fb.png" /></a></li>
-								<li><a href="https://www.instagram.com/nedaa.center/" title="Instagram"><i class="fa fa-facebook"></i><img src="img/instagram.jpg" /></a></li>
-								<li><a href="https://twitter.com/n_kidsworld" title="twitter"><i class="fa fa-facebook"></i><img src="img/twitter.png" /></a></li>
+								<li><a href="https://www.facebook.com/nedaacenter.qatar/" title="Facebook"><i></i><img src="img/fb.png" /></a></li>
+								<li><a href="https://www.instagram.com/nedaa.center/" title="Instagram"><i></i><img src="img/instagram.jpg" /></a></li>
+								<li><a href="https://twitter.com/n_kidsworld" title="twitter"><i></i><img src="img/twitter.png" /></a></li>
 								
 							</ul>
 						</div>
@@ -361,13 +354,27 @@
 </html>
 
 <script>
+    document.getElementById("art").addEventListener("click", function (event) { localStorage.setItem('Dep', 'art'); });
+    document.getElementById("early").addEventListener("click", function (event) { localStorage.setItem('Dep', 'early'); });
+    document.getElementById("autism").addEventListener("click", function (event) { localStorage.setItem('Dep', 'special'); });
+    document.getElementById("voc").addEventListener("click", function (event) { localStorage.setItem('Dep', 'sense'); });
+    document.getElementById("speech").addEventListener("click", function (event) { localStorage.setItem('Dep', 'speech'); });
+    document.getElementById("Occupation").addEventListener("click", function (event) { localStorage.setItem('Dep', 'Occupation'); });
+    document.getElementById("rehab").addEventListener("click", function (event) { localStorage.setItem('Dep', 'rehab'); });
+    document.getElementById("learn1").addEventListener("click", function (event) { localStorage.setItem('Dep', 'learn1'); });
+    document.getElementById("learn2").addEventListener("click", function (event) { localStorage.setItem('Dep', 'learn2'); });
+    document.getElementById("psychology").addEventListener("click", function (event) { localStorage.setItem('Dep', 'psychology'); });
+    document.getElementById("physio").addEventListener("click", function (event) { localStorage.setItem('Dep', 'physio'); });
+    document.getElementById("adapted").addEventListener("click", function (event) { localStorage.setItem('Dep', 'adapted'); });
+    document.getElementById("music").addEventListener("click", function (event) { localStorage.setItem('Dep', 'musical'); });
 
-	window.onload = function () {
-		if (typeof eng !== 'undefined' && eng !== null) {
+	window.onload = function () { 
+        var eng = localStorage.getItem('eng');
+		if (eng !== 'undefined' && eng !== null) {
 
 		}
-		else {var eng = localStorage.setItem('eng', 'true')}
-		var eng = localStorage.getItem('eng');
+		else {eng = localStorage.setItem('eng', 'false')}
+        
 		console.log(eng);
 		var ele = document.getElementsByClassName('english');
 		var ele2 = document.getElementsByClassName('arabic');
@@ -412,19 +419,7 @@
 		}
 	}
 
-	document.getElementById("art").addEventListener("click", function (event) { localStorage.setItem('Dep', 'art'); });
-	document.getElementById("early").addEventListener("click", function (event) { localStorage.setItem('Dep', 'early'); });
-	document.getElementById("autism").addEventListener("click", function (event) { localStorage.setItem('Dep', 'special'); });
-	document.getElementById("voc").addEventListener("click", function (event) { localStorage.setItem('Dep', 'sense'); });
-	document.getElementById("speech").addEventListener("click", function (event) { localStorage.setItem('Dep', 'speech'); });
-	document.getElementById("Occupation").addEventListener("click", function (event) { localStorage.setItem('Dep', 'Occupation'); });
-	document.getElementById("multi").addEventListener("click", function (event) { localStorage.setItem('Dep', 'rehab'); });
-	document.getElementById("learn1").addEventListener("click", function (event) { localStorage.setItem('Dep', 'learn1'); });
-	document.getElementById("learn2").addEventListener("click", function (event) { localStorage.setItem('Dep', 'learn2'); });
-	document.getElementById("psychology").addEventListener("click", function (event) { localStorage.setItem('Dep', 'psychology'); });
-	document.getElementById("physio").addEventListener("click", function (event) { localStorage.setItem('Dep', 'physio'); });
-	document.getElementById("adapted").addEventListener("click", function (event) { localStorage.setItem('Dep', 'adapted'); });
-	document.getElementById("music").addEventListener("click", function (event) { localStorage.setItem('Dep', 'musical'); });
+	
 
 </script>
 
