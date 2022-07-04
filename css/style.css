@@ -166,7 +166,7 @@ header ul.nav li ul {
     position: absolute;
     right: 0;
     margin-top: 3px;
-    padding-left: 20px;
+    padding-left: 0px;
 }
 
 .navbar .nav > li > .dropdown-menu:before {
@@ -1983,7 +1983,7 @@ ul li:hover ul.dropdown {
     position: absolute;
     background-color: #f9f9f9;
     min-width: 0px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+
     z-index: 1000;
     height: 800%;
 }
@@ -1992,14 +1992,14 @@ ul li ul.dropdown li {
     display: block;
     font-size: 0px;
     margin-bottom: -40px;
-    text-align:left;
+    text-align:center;
 }
 
 
 
 /* Popup box BEGIN */
 .hover_bkgr_fricc {
-    background: rgba(0,0,0,0);
+    background: rgba(0,0,0,.4);
     cursor: pointer;
     display: none;
     height: 100%;
@@ -2013,7 +2013,7 @@ ul li ul.dropdown li {
     .hover_bkgr_fricc .helper {
         display: inline-block;
         height: 100%;
-        width:100%;
+       
         vertical-align: middle;
     }
 
@@ -2060,7 +2060,7 @@ ul li ul.dropdown li {
     display: inline-block;
     font-weight: bold;
 }
-/* Popup box BEGIN */
+/* Popup box END */
 
 
 nav {
@@ -2147,12 +2147,12 @@ a.active, a:hover {
 
         nav ul li {
             display: block;
-            margin: 50px 0;
-            line-height: 30px;
+            margin: 40px 0;
+            line-height: 25px;
         }
 
             nav ul li a {
-                font-size: 18px;
+                font-size: 15px;
                 color: white;
             }
 
@@ -2167,19 +2167,22 @@ a.active, a:hover {
     }
 
     ul li ul.dropdown {
-        right: 200px;
+        right: 15vw;
         top: -100px;
         width: 180px;
     }
+        ul li ul.dropdown li {
+           
+            line-height: 25px;
+            text-align: center;
+        }
 
         ul li ul.dropdown li a {
             font-size: 10px;
             color: black;
             margin-right: 10px;
         }
-    .team-six{
-        width: 50%;
-    }
+   
 }
 
 .geeks {
