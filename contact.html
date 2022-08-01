@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html id="html" lang="en">
+<html id="html" lang="en" dir="rtl">
 <head>
 	<meta charset="utf-8">
 	<title>Nada center for the disabled</title>
@@ -26,41 +26,18 @@
 			<input type="checkbox" id="check">
 			<label for="check" class="checkbtn"><i class="fa fa-bars"></i></label>
 			<label class="navbar-brand" href="index.html"><img src="img/logo.png" alt="logo" /></label>
-			<label class="english" style="font-family: Britannic; color: black; margin-left: 20px; position: relative; top: 20px; display: inline-block; font-size: 4vw;">Neda Learning Center</label>
-			<label class="arabic" style="font-family: Britannic; color: black; margin-right:200px; position: relative; top: 20px; display: inline-block; font-size: 4vw;">مركز النداء</label>
-			<ul class="english">
-				<li><a href="index.html">Home</a></li>
-				<li><a href="about.html">About Us</a></li>
+			<center>
+				<label style=" z-index:-1; font-family: Britannic; color: black; position: absolute; top: 30px; left: 0; right: 0; bottom: 0; font-size: 4vw;">مركز نداء</label>
+			</center>
+			
 
-				<!-- Drop down Departments-->
+			<ul >
+
 				<li>
-					<a href="departments.html" onclick="Department()">Services ▾</a>
-					<ul class="dropdown">
-						<li><a href="services.html" id="early"><u>Early intervention</u></a></li>
-						<li><a href="services.html" id="special"><u>Special education</u></a></li>
-						<li><a href="services.html" id="sense"><u>Sensory integration</u></a></li>
-						<li><a href="services.html" id="speech"><u>Speech therapy</u></a></li>
-						<li><a href="services.html" id="Occupation"><u>Occupation therapy</u></a></li>
-						<li><a href="services.html" id="learn1"><u>Learning disability level 1</u></a></li>
-						<li><a href="services.html" id="learn2"><u>Learning disability level 2</u></a></li>
-						<li><a href="services.html" id="psychology"><u>Psychotherapy</u></a></li>
-						<li><a href="services.html" id="physio"><u>Physiotherapy</u></a></li>
-						<li><a href="services.html" id="music"><u>Music education</u></a></li>
-						<li><a href="services.html" id="adapted"><u>Adapted physical education</u></a></li>
-						<li><a href="services.html" id="art"><u>Art</u></a></li>
-						<li><a href="services.html" id="rehab"><u>Rehabilitation program</u></a></li>
-
-					</ul>
+					<a href="contactE.html">
+						<button style="background-color: transparent; border: 0px; font-size: 20px;">English</button>
+					</a>
 				</li>
-				<!--end here  -->
-				<li><a href="contact.html">Contact</a></li>
-				<li><button style="background-color: transparent; border: 0px; font-size: 20px; " onclick="EditData()">عربي</button></li>
-
-			</ul>
-
-			<ul class="arabic">
-
-				<li><button style="background-color: transparent; border: 0px; font-size: 20px;" onclick="EditData()">English</button></li>
 				<li><a href="index.html">الرئيسية</a></li>
 				<li><a href="about.html">من نحن</a></li>
 
@@ -90,7 +67,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-12">
-						<h2 class="pageTitle english">Contact Us</h2>
+						
 						<h2 class="pageTitle arabic">تواصل معنا</h2>
 					</div>
 				</div>
@@ -110,14 +87,7 @@
 				<div class="row">
 					<div class="col-md-6">
 						<br>
-						<div class="alert alert-success hidden" id="contactSuccess">
-							<strong>Success!</strong> Your message has been sent to us.
-						</div>
-						<div class="alert alert-error hidden" id="contactError">
-							<strong>Error!</strong> There was an error sending your message.
-						</div>
 						
-							<h2 class="english">Leave us a message and we'll get back to you</h2>
 							<h2 class="arabic">استفسر برسالة وسنستجيب لك بأسرع وقت</h2>
 							<br><br><br>
 						
@@ -127,25 +97,25 @@
 
 
 								<div class="form-group has-feedback">
-									<label class="english" for="name">Name*</label>
+								
 									<label class="arabic" for="name">الاسم*</label>
 									<input type="text" class="form-control" id="name" name="name" placeholder="">
 									<i class="fa fa-user form-control-feedback"></i>
 								</div>
 								<div class="form-group has-feedback">
-									<label class="english" for="email">Email*</label>
+									
 									<label class="arabic" for="email">البريد الالكتروني*</label>
 									<input type="email" class="form-control" id="email" name="email" placeholder="">
 									<i class="fa fa-envelope form-control-feedback"></i>
 								</div>
 								<div class="form-group has-feedback">
-									<label class="english" for="subject">Subject*</label>
+									
 									<label class="arabic" for="subject">الموضوع*</label>
 									<input type="text" class="form-control" id="subject" name="subject" placeholder="">
 									<i class="fa fa-navicon form-control-feedback"></i>
 								</div>
 								<div class="form-group has-feedback">
-									<label class="english" for="message">Message*</label>
+									
 									<label class="arabic" for="message">الرسالة*</label>
 									<textarea class="form-control" rows="6" id="message" name="message" placeholder=""></textarea>
 									<i class="fa fa-pencil form-control-feedback"></i>
@@ -157,18 +127,7 @@
 					<div class="col-md-6">
 
 						<div class="span4">
-							<div class="title-box clearfix english">
-							<h3 class="title-box_primary">Contact info</h3></div>
-							<address class="english">
-								<strong>
-									Nada center for children with disability<br>
-									Al Maha St, madinat khalifa, doha
-								</strong><br>
-								Telephone: +97470260660<br>
-								mobile phone: +97477266100<br>
-								Whatsapp: 66677836<br>
-								E-mail: <a href="mailto: nedaacenter@yahoo.com">nedaacenter@yahoo.com</a><br>
-							</address>
+							
 							<div class="title-box clearfix arabic"><h3 class="title-box_primary">بيانات التواصل</h3></div>
 							<address class="arabic">
 								<strong>
@@ -190,20 +149,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-3">
-						<div class="widget english ">
-							<h1 class="widgetheading">contact us</h1>
-							<address>
-								Nada center for children with disability
-							</address>
-							<p>
-								<div>
-								<img src="img/whatsapp2.png"/> 66677836 <br>
-								<img src="img/telephone.png"/> 70260660 <br>
-								<img src="img/mobile2.jpg"/> 77266100 <br>
-								<img src="img/email.png"/> nedaacenter@yahoo.com
-							</div>
-							</p>
-						</div>
+						
 						<div class="widget arabic">
 							<h1 class="widgetheading">اخر الاخبار</h1>
 							<ul class="link-list">
@@ -216,16 +162,7 @@
 
 					</div>
 					<div class="col-lg-3">
-						<div class="widget english">
-							<h1 class="widgetheading">Support</h1>
-							<ul class="link-list">
-								<li><a href="index.html">Latest Events</a></li>
-								<li><a href="#">Terms and conditions</a></li>
-								<li><a href="#">Privacy policy</a></li>
-								<li><a href="#">Career</a></li>
-								<li><a href="contact.html">Call us</a></li>
-							</ul>
-						</div>
+						
 						<div class="widget arabic">
 							<h1 class="widgetheading">المواقع السريعة</h1>
 							<ul class="link-list">
@@ -239,15 +176,7 @@
 
 					</div>
 					<div class="col-lg-3">
-						<div class="widget english">
-							<h1 class="widgetheading">Quick links</h1>
-							<ul class="link-list">
-								<li><a href="index.html">Home</a></li>
-								<li><a href="about.html">About us</a></li>
-								<li><a href="departments.html">Departments</a></li>
-								<li><a href="contact.html">Contact us</a></li>
-							</ul>
-						</div>
+						
 						<div class="widget arabic">
 							<h1 class="widgetheading">المساعدة والدعم</h1>
 							<ul class="link-list">
@@ -260,9 +189,7 @@
 
 					</div>
 					<div class="col-lg-3">
-						<div class="widget english ">
-							<h1 class="widgetheading">latest news:</h1>
-						</div>
+						
 						<div class="widget arabic">
 							<h1 class="widgetheading">تواصل بنا</h1>
 							<address>
@@ -284,7 +211,6 @@
 						<div class="col-lg-6">
 							<div class="copyright">
 								<h1>
-									<span class="english" style="font-size: 15px">©  2022 maha, All right reserved  </span>
 									<span class="arabic" style="font-size: 15px">©  2022 مركز النداء كل الحقوق محفوظة  </span>
 								</h1>
 							</div>
@@ -310,54 +236,6 @@
 
 
 <script>
-
-	window.onload = function () {
-		var eng = localStorage.getItem('eng');
-		console.log(eng);
-		var ele = document.getElementsByClassName('english');
-		var ele2 = document.getElementsByClassName('arabic');
-		if (eng === 'true') {
-			for (var i = 0; i < ele.length; i++) {
-				document.getElementById("html").dir = "ltr";
-				ele[i].style.display = 'inline';
-				ele2[i].style.display = 'none';
-			}
-		}
-		else if (eng === 'false') {
-			for (var i = 0; i < ele2.length; i++) {
-				document.getElementById("html").dir = "rtl";
-				ele[i].style.display = 'none';
-				ele2[i].style.display = 'inline';
-
-
-			}
-		}
-	}
-	function EditData() {
-		var eng = localStorage.getItem('eng');
-		var ele = document.getElementsByClassName('english');
-		var ele2 = document.getElementsByClassName('arabic');
-		if (eng === 'true') {
-			document.getElementById("html").dir = "rtl";
-			for (var i = 0; i < ele.length; i++) {
-				ele[i].style.display = 'none';
-				ele2[i].style.display = 'inline';
-			}
-			eng = false;
-			localStorage.setItem('eng', 'false');
-		}
-		else {
-			document.getElementById("html").dir = "ltr";
-			for (var i = 0; i < ele.length; i++) {
-				ele[i].style.display = 'inline';
-				ele2[i].style.display = 'none';
-			}
-			eng = true;
-			localStorage.setItem('eng', 'true');
-		}
-	}
-
-
 
 	document.getElementById("art").addEventListener("click", function (event) { localStorage.setItem('Dep', 'art'); });
 	document.getElementById("early").addEventListener("click", function (event) { localStorage.setItem('Dep', 'early'); });

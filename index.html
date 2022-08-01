@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html id="html" lang="ar">
+<html id="html" lang="ar" dir="rtl">
 <head>
 	<meta charset="utf-8">
-	<title>Nada center for the disabled</title>
+	<title>مركز نداء لذوي الإحتياجات الخاصة</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<meta name="description" content="" />
 	<meta name="author" content="http://webthemez.com" />
@@ -26,69 +26,46 @@
 	<div id="wrapper">
 		<!-- start header -->
 		<nav class="navbar-fixed-top">
+
 			<input type="checkbox" id="check">
 			<label for="check" class="checkbtn"><i class="fa fa-bars"></i></label>
+
 			<label class="navbar-brand" href="index.html"><img src="img/logo.png" alt="logo" /></label>
-			<label class="english" style="font-family: Britannic; color: black; margin-left: 20px; position: relative; top: 20px; display: inline-block; font-size: 4vw;">Neda Learning Center</label>
-			<label class="arabic" style="font-family: Britannic; color: black; margin-right:200px; position: relative; top: 20px; display: inline-block; font-size: 4vw;">مركز النداء</label>
-			<ul class="english">
-				<li><a href="index.html">Home</a></li>
-				<li><a href="about.html">About Us</a></li>
+			<center>
+				<label  style=" z-index:-1; font-family: Britannic; color: black; position: absolute; top: 30px; left: 0; right: 0; bottom: 0; font-size: 4vw;">مركز نداء</label>
+			</center>
+					<ul style="margin-right:-30px" >
 
-				<!-- Drop down Departments-->
-				<li>
-					<a href="departments.html" onclick="Department()">Services ▾</a>
-					<ul class="dropdown">
-						<li><a href="services.html" id="early"><u>Early intervention</u></a></li>
-						<li><a href="services.html" id="special"><u>Special education</u></a></li>
-						<li><a href="services.html" id="sense"><u>Sensory integration</u></a></li>
-						<li><a href="services.html" id="speech"><u>Speech therapy</u></a></li>
-						<li><a href="services.html" id="Occupation"><u>Occupation therapy</u></a></li>
-						<li><a href="services.html" id="learn1"><u>Learning disability level 1</u></a></li>
-						<li><a href="services.html" id="learn2"><u>Learning disability level 2</u></a></li>
-						<li><a href="services.html" id="psychology"><u>Psychotherapy</u></a></li>
-						<li><a href="services.html" id="physio"><u>Physiotherapy</u></a></li>
-						<li><a href="services.html" id="music"><u>Music education</u></a></li>
-						<li><a href="services.html" id="adapted"><u>Adapted physical education</u></a></li>
-						<li><a href="services.html" id="art"><u>Art</u></a></li>
-						<li><a href="services.html" id="rehab"><u>Rehabilitation program</u></a></li>
+						<li>
+							<a href="indexE.html">
+								<button style="background-color: transparent; border: 0px; font-size: 20px;">English</button>
+							</a>
+						</li>
+						<li><a href="index.html">الرئيسية</a></li>
+						<li><a href="about.html">من نحن</a></li>
+
+						<li>
+							<a href="departments.html" onclick="Department()">خدماتنا ▾</a>
+							<ul class="dropdown" style="right:200px;">
+								<li id="early"><a style="font-size:20px;" href="services.html"><u>التدخل المبكر</u></a></li>
+								<li><a style="font-size:20px;" href="services.html" id="autism"><u>التربية الخاصة</u></a></li>
+								<li><a style="font-size:20px;" href="services.html" id="voc"><u>التكامل الحسي</u></a></li>
+								<li><a style="font-size:20px;" href="services.html" id="speech"><u>علاج النطق</u></a></li>
+								<li><a style="font-size:20px;" href="services.html" id="Occupation"><u>العلاج الوظيفي</u></a></li>
+								<li><a style="font-size:20px;" href="services.html" id="learn1"><u>صعوبات التعلم مستوى 1</u></a></li>
+								<li><a style="font-size:20px;" href="services.html" id="learn2"><u>صعوبات التعلم مستوى 2</u></a></li>
+								<li><a style="font-size:20px;" href="services.html" id="psychology"><u>العلاج النفسي</u></a></li>
+								<li><a style="font-size:20px;" href="services.html" id="physio"><u>العلاج الطبيعي</u></a></li>
+								<li><a style="font-size:20px;" href="services.html" id="music"><u>التربية الموسيقية</u></a></li>
+								<li><a style="font-size:20px;" href="services.html" id="adapted"><u>الرياضة المعدلة</u></a></li>
+								<li><a style="font-size:20px;" href="services" id="art"><u>الفنون</u></a></li>
+								<li><a style="font-size:20px;" href="services.html" id="rehab"><u>التأهيل العلاجي</u></a></li>
+							</ul>
+						</li>
+						<li><a  href="contact.html">إتصل بنا</a></li>
 
 					</ul>
-				</li>
-				<!--end here  -->
-				<li><a href="contact.html">Contact</a></li>
-				<li><button style="background-color: transparent; border: 0px; font-size: 20px; " onclick="EditData()">عربي</button></li>
-
-			</ul>
-
-			<ul class="arabic">
-
-				<li><button style="background-color: transparent; border: 0px; font-size: 20px;" onclick="EditData()">English</button></li>
-				<li><a href="index.html">الرئيسية</a></li>
-				<li><a href="about.html">من نحن</a></li>
-
-				<li>
-					<a href="departments.html" onclick="Department()">خدماتنا ▾</a>
-					<ul class="dropdown"style="right:200px;">
-						<li id="early"><a style="font-size:20px;" href="services.html" ><u>التدخل المبكر</u></a></li>
-						<li><a style="font-size:20px;" href="services.html" id="autism"><u>التربية الخاصة</u></a></li>
-						<li><a style="font-size:20px;" href="services.html" id="voc"><u>التكامل الحسي</u></a></li>
-						<li><a style="font-size:20px;" href="services.html" id="speech"><u>علاج النطق</u></a></li>
-						<li><a style="font-size:20px;" href="services.html" id="Occupation"><u>العلاج الوظيفي</u></a></li>
-						<li><a style="font-size:20px;" href="services.html" id="learn1"><u>صعوبات التعلم مستوى 1</u></a></li>
-						<li><a style="font-size:20px;" href="services.html" id="learn2"><u>صعوبات التعلم مستوى 2</u></a></li>
-						<li><a style="font-size:20px;" href="services.html" id="psychology"><u>العلاج النفسي</u></a></li>
-						<li><a style="font-size:20px;" href="services.html" id="physio"><u>العلاج الطبيعي</u></a></li>
-						<li><a style="font-size:20px;" href="services.html" id="music"><u>التربية الموسيقية</u></a></li>
-						<li><a style="font-size:20px;" href="services.html" id="adapted"><u>الرياضة المعدلة</u></a></li>
-						<li><a style="font-size:20px;" href="services" id="art"><u>الفنون</u></a></li>
-						<li><a style="font-size:20px;" href="services.html" id="rehab"><u>التأهيل العلاجي</u></a></li>
-					</ul>
-				</li>
-				<li><a class="active" href="contact.html">إتصل بنا</a></li>
-
-			</ul>
-		</nav>
+</nav>
 		
 		<!-- end header -->
 		<section style="margin-top:80px;" >
@@ -97,9 +74,6 @@
 				<h1 class="head1 headertxt arabic">اتصل</h1>
 				<h1 class="head2 headertxt arabic">قيم</h1>
 				<h1 class="head3 headertxt arabic">عالج</h1>
-				<h1 class="head1 headertxt english">Call</h1>
-				<h1 class="head2 headertxt english">Assess</h1>
-				<h1 class="head3 headertxt english">Treat</h1>
 			</div>
 			<!-- end slider -->
 
@@ -109,7 +83,6 @@
 				<div class="row" >
 					<div class="col-lg-12">
 						<div class="aligncenter">
-							<h1 class="aligncenter english">About us</h1>
 							<h1 class="aligncenter arabic">من نحن؟</h1>
 							<br><br /><br />
 
@@ -119,14 +92,9 @@
 								.احدث برامج التدخل المبكر بما يتناسب مع قدرات كل طفل<br>
 								نهتم برفع مستوى قدرات طلابنا التعليمية والتحصيلية
 							</p>
-							<p class="english"style="font-size:30px;">
-								Our mission at Nada Center is to educate and prepare people with disabilities for inclusion with their peers in regular schools and to integrate them in the society <br />
-								We work to intervene early in discovering mental, developmental, learning and physical disabilities. The special educator assesses the children’s skills ,determines their learning needs , designs an individual education plan(IEP)  train children and track each student’ s progress.
-							</p>
 								<br /><br />
 								<a href="about.html">
-									<button class="english" style="padding: 10px 70px; border-radius: 8px;font-size: 30px;">Learn More</button>
-									<button class="arabic" style="padding: 10px 70px; border-radius: 8px;font-size: 30px;">اقرأ المزيد</button>
+									<button  style="padding: 10px 70px; border-radius: 8px;font-size: 30px;">اقرأ المزيد</button>
 								</a>
 						</div>
 					</div>
@@ -146,7 +114,6 @@
 					<div class="inner_section">
 						<div class="aligncenter">
 							<h1 class="aligncenter arabic">خدماتنا</h1>
-							<h1 class="aligncenter english">What we offer</h1>
 						</div>
 						<br /><br /><br />
 
@@ -154,13 +121,7 @@
 
 						<div class="row">
 							<div class="col-md-6"> <img class="img-responsive" style="border-radius: 15px; width:100%;"src="img/senses.jpg" align=""> </div>
-							<div class="col-md-6 english">
-								<h3>Sense Development</h3>
-								<p>
-									is a condition in which the brain has trouble receiving and responding to information that comes in through the senses.
-									Formerly referred to as sensory integration dysfunction, it is not currently recognized as a distinct medical diagnosis.
-								</p>
-							</div>
+
 							<div class="col-md-6 arabic">
 								<h3>التكامل الحسي</h3>
 								<p>هو عبارة عن مرض ينشأ عندما لا يتم معالجة التكامل متعدد الحواس بشكل كاف من أجل توفير استجابات مناسبة لمتطلبات البيئة. توفر الحواس المعلومات عن طريق وسائل مختلفة، الرؤية، السمع، اللمس، الشم، الذوق، الحس العميق، والجهاز الدهليزي. والتي يحتاجها الإنسان من أجل القيام بوظائفه</p>
@@ -171,25 +132,19 @@
 
 						<div class="row mrgTop30">
 
-							<div class="col-md-6 english">
-								<h3>Occupational therapy</h3>
-								<p>It is to assess students' cases and rehabilitate them for daily and practical life skills, by developing their abilities and removing environmental barriers, which helps them become more independent.</p>
-							</div>
-							<div class="col-md-6 arabic">
+							<div class="col-md-6"> <img class="img-responsive" style="border-radius: 15px; float:right;" src="img/Occupation.jpg"  align="right"> </div>
+							<div class="col-md-6 arabic" >
 								<h3>العلاج الوظيفي</h3>
 								<p>هو تقييم حالات الطلاب وتأهيلهم لمهارات الحياة اليومية والعملية, وذلك من خلال تطوير قدراتهم وازالة الحواجز البيئية مما يساعد على استقلاليتهم.</p>
 							</div>
-							<div class="col-md-6"> <img class="img-responsive" style="border-radius: 15px;" src="img/Occupation.jpg" align=""> </div>
+							
 						</div>
 
 						<!-- number 3-->
 
 						<div class="row">
 							<div class="col-md-6"> <img class="img-responsive" style="border-radius: 15px;"src="img/intervention.jpeg" align=""> </div>
-							<div class="col-md-6 english">
-								<h3>Early interrvention</h3>
-								<p> Early intervention is identifying and providing effective early support to children and young people who are at risk of poor outcomes. Effective early intervention works to prevent problems occurring and to tackle them head-on when they do, before problems get worse.</p>
-							</div>
+						
 							<div class="col-md-6 arabic">
 								<h3>التدخل المبكر</h3>
 								<p>
@@ -204,7 +159,6 @@
 				</div>
 				<div style="text-align:center">
 					<a href="departments.html">
-						<button class="english" style="padding: 20px 100px; border-radius: 8px;font-size: 30px;">Learn More</button>
 						<button class="arabic" style="padding: 20px 100px; border-radius: 8px;font-size: 30px;">اقرأ المزيد</button>
 					</a>
 				</div>
@@ -226,20 +180,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-3">
-						<div class="widget english ">
-							<h1 class="widgetheading">contact us</h1>
-							<address>
-								Nada center for children with disability
-							</address>
-							<p>
-								<div>
-								<img src="img/whatsapp2.png"/> 66677836 <br>
-								<img src="img/telephone.png"/> 70260660 <br>
-								<img src="img/mobile2.jpg"/> 77266100 <br>
-								<img src="img/email.png"/> nedaacenter@yahoo.com
-							</div>
-							</p>
-						</div>
+						
 						<div class="widget arabic">
 							<h1 class="widgetheading">اخر الاخبار</h1>
 							<ul class="link-list">
@@ -252,15 +193,7 @@
 
 					</div>
 					<div class="col-lg-3">
-						<div class="widget english">
-							<h1 class="widgetheading">Support</h1>
-							<ul class="link-list">
-								<li><a href="index.html">Latest Events</a></li>
-								<li><a href="#">Terms and conditions</a></li>
-								<li><a href="#">Privacy policy</a></li>
-								<li><a href="contact.html">Call us</a></li>
-							</ul>
-						</div>
+					
 						<div class="widget arabic">
 							<h1 class="widgetheading">المواقع السريعة</h1>
 							<ul class="link-list">
@@ -274,15 +207,7 @@
 
 					</div>
 					<div class="col-lg-3">
-						<div class="widget english">
-							<h1 class="widgetheading">Quick links</h1>
-							<ul class="link-list">
-								<li><a href="index.html">Home</a></li>
-								<li><a href="about.html">About us</a></li>
-								<li><a href="departments.html">Departments</a></li>
-								<li><a href="contact.html">Contact us</a></li>
-							</ul>
-						</div>
+				
 						<div class="widget arabic">
 							<h1 class="widgetheading">المساعدة والدعم</h1>
 							<ul class="link-list">
@@ -295,20 +220,13 @@
 
 					</div>
 					<div class="col-lg-3">
-						<div class="widget english ">
-							<h1 class="widgetheading">latest news:</h1>
-						</div>
+						
 						<div class="widget arabic">
 							<h1 class="widgetheading">تواصل بنا</h1>
 							<address>
 								مركز النداء لذوي الاحتياجات الخاصة<br>
 							</address>
-							<div>
-								<img src="img/whatsapp2.png"/> 66677836 <br>
-								<img src="img/telephone.png"/> 70260660 <br>
-								<img src="img/mobile2.jpg"/> 77266100 <br>
-								<img src="img/email.png"/> nedaacenter@yahoo.com
-							</div>
+				
 						</div>
 					</div>
 				</div>
@@ -319,7 +237,6 @@
 						<div class="col-lg-6">
 							<div class="copyright">
 								<h1>
-									<span class="english" style="font-size: 15px">©  2022 maha, All right reserved  </span>
 									<span class="arabic" style="font-size: 15px">©  2022 مركز النداء كل الحقوق محفوظة  </span>
 								</h1>
 							</div>
@@ -369,60 +286,6 @@
     document.getElementById("physio").addEventListener("click", function (event) { localStorage.setItem('Dep', 'physio'); });
     document.getElementById("adapted").addEventListener("click", function (event) { localStorage.setItem('Dep', 'adapted'); });
     document.getElementById("music").addEventListener("click", function (event) { localStorage.setItem('Dep', 'musical'); });
-
-	window.onload = function () { 
-        var eng = localStorage.getItem('eng');
-		if (eng !== 'undefined' && eng !== null) {
-
-		}
-		else {eng = localStorage.setItem('eng', 'false')}
-        
-		console.log(eng);
-		var ele = document.getElementsByClassName('english');
-		var ele2 = document.getElementsByClassName('arabic');
-		if (eng === 'true') {
-			for (var i = 0; i < ele.length; i++) {
-				document.getElementById("html").dir = "ltr";
-				ele[i].style.display = 'inline';
-				ele2[i].style.display = 'none';
-			}
-		}
-		else if (eng === 'false') {
-			for (var i = 0; i < ele2.length; i++) {
-				document.getElementById("html").dir = "rtl";
-				ele[i].style.display = 'none';
-				ele2[i].style.display = 'inline';
-
-
-			}
-		}
-	}
-	function EditData() {
-		var eng = localStorage.getItem('eng');
-		var ele = document.getElementsByClassName('english');
-		var ele2 = document.getElementsByClassName('arabic');
-		if (eng === 'true') {
-			document.getElementById("html").dir = "rtl";
-			for (var i = 0; i < ele.length; i++) {
-				ele[i].style.display = 'none';
-				ele2[i].style.display = 'inline';
-			}
-			eng = false;
-			localStorage.setItem('eng', 'false');
-		}
-		else {
-			document.getElementById("html").dir = "ltr";
-			for (var i = 0; i < ele.length; i++) {
-				ele[i].style.display = 'inline';
-				ele2[i].style.display = 'none';
-			}
-			eng = true;
-			localStorage.setItem('eng', 'true');
-		}
-	}
-
-	
-
 </script>
 
 
