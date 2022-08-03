@@ -2135,7 +2135,7 @@ a.active, a:hover {
 
     nav ul {
         position: fixed;
-        
+        width: 40vw;
         height: 100vh;
         background: #27282c;
         top: 80px;
@@ -2168,21 +2168,23 @@ a.active, a:hover {
     }
 
     ul li ul.dropdown {
-        position:absolute;
-        right:20vw;
-        top: -100px;
+        position: absolute;
+        right: 25vw;
+        top: -1vh;
         width: 50vw;
+        max-height: 100vh;
+        overflow: scroll;
     }
 
         ul li ul.dropdown li {
-            line-height: 25px;
+            line-height: 5vh;
             text-align: center;
         }
 
             ul li ul.dropdown li a {
                 font-size: 2vw;
                 color: black;
-                margin-right: 10px;
+                
             }
 }
 
