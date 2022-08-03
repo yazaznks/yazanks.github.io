@@ -2135,7 +2135,7 @@ a.active, a:hover {
 
     nav ul {
         position: fixed;
-        width: 40%;
+        
         height: 100vh;
         background: #27282c;
         top: 80px;
@@ -2147,8 +2147,9 @@ a.active, a:hover {
 
         nav ul li {
             display: block;
-            margin: 40px 0;
+            margin: 50px 40px 0 0px;
             line-height: 25px;
+            text-align:left
         }
 
             nav ul li a {
@@ -2167,23 +2168,24 @@ a.active, a:hover {
     }
 
     ul li ul.dropdown {
-        right: 15vw;
+        position:absolute;
+        right:20vw;
         top: -100px;
-        width: 180px;
+        width: 50vw;
     }
+
         ul li ul.dropdown li {
-           
             line-height: 25px;
             text-align: center;
         }
 
-        ul li ul.dropdown li a {
-            font-size: 10px;
-            color: black;
-            margin-right: 10px;
-        }
-   
+            ul li ul.dropdown li a {
+                font-size: 2vw;
+                color: black;
+                margin-right: 10px;
+            }
 }
+
 
 .geeks {
     width: 10%;
